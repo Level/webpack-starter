@@ -1,0 +1,27 @@
+{
+  "name": "level-with-webpack-test",
+  "version": "0.0.0",
+  "description": "Testing level@next with webpack and es6 imports",
+  "private": true,
+  "license": "MIT",
+  "author": "Vincent Weevers",
+  "scripts": {
+    "test": "standard",
+    "build": "webpack index.js -o bundle.js"
+  },
+  "dependencies": {
+    "level": "~5.0.0-0"
+  },
+  "devDependencies": {
+    "standard": "~12.0.1",
+    "webpack": "~4.28.4",
+    "webpack-cli": "~3.2.1"
+  },
+  "keywords": [
+    "level",
+    "webpack"
+  ],
+  "engines": {
+    "node": ">=6"
+  }
+}
