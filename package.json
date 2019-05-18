@@ -1,22 +1,21 @@
 {
-  "name": "level-with-webpack-test",
+  "name": "level-webpack-starter",
   "version": "0.0.0",
-  "description": "Testing level@next with webpack and es6 imports",
+  "description": "Demonstrates bundling level for browsers using webpack",
   "private": true,
   "license": "MIT",
-  "author": "Vincent Weevers",
   "scripts": {
-    "test": "standard",
     "build": "webpack index.js -o bundle.js"
   },
   "dependencies": {
     "level": "~5.0.1"
   },
   "devDependencies": {
-    "standard": "^12.0.1",
     "webpack": "^4.31.0",
     "webpack-cli": "^3.3.2"
   },
+  "repository": "Level/webpack-starter",
+  "homepage": "https://github.com/Level/webpack-starter",
   "keywords": [
     "level",
     "webpack"
