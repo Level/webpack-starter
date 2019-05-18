@@ -5,7 +5,8 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "build": "webpack index.js -o bundle.js"
+    "build": "webpack index.js -o bundle.js",
+    "test": "npm run build"
   },
   "dependencies": {
     "level": "~5.0.1"

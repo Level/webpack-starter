@@ -4,6 +4,7 @@
 > See also [`Level/browserify-starter`](https://github.com/Level/browserify-starter).
 
 [![level badge][level-badge]](https://github.com/Level/awesome)
+[![Travis](https://img.shields.io/travis/Level/webpack-starter.svg?logo=travis&label=)](https://travis-ci.org/Level/webpack-starter)
 [![Backers on Open Collective](https://opencollective.com/level/backers/badge.svg?color=orange)](#backers)
 [![Sponsors on Open Collective](https://opencollective.com/level/sponsors/badge.svg?color=orange)](#sponsors)
 
