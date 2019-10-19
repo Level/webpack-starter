@@ -9,7 +9,7 @@
     "test": "npm run build"
   },
   "dependencies": {
-    "level": "~5.0.1"
+    "level": "~6.0.0"
   },
   "devDependencies": {
     "webpack": "^4.31.0",
