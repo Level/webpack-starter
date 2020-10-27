@@ -1,19 +1,22 @@
 {
   "name": "level-webpack-starter",
-  "version": "0.0.0",
-  "description": "Demonstrates bundling level for browsers using webpack",
+  "version": "0.1.0",
+  "description": "Demonstrates bundling level for browsers using webpack 5",
   "private": true,
   "license": "MIT",
   "scripts": {
-    "build": "webpack index.js -o bundle.js",
+    "build": "webpack",
     "test": "npm run build"
   },
   "dependencies": {
-    "level": "~6.0.0"
+    "assert": "^2.0.0",
+    "level": "~6.0.0",
+    "process": "^0.11.10",
+    "util": "^0.12.3"
   },
   "devDependencies": {
-    "webpack": "^4.31.0",
-    "webpack-cli": "^3.3.2"
+    "webpack": "^5.2.0",
+    "webpack-cli": "^4.1.0"
   },
   "repository": "Level/webpack-starter",
   "homepage": "https://github.com/Level/webpack-starter",
