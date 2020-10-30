@@ -5,12 +5,14 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "build": "webpack",
-    "test": "npm run build"
+    "build": "rm -rf dist/* && webpack",
+    "test": "npm run build",
+    "run-browser-cli": "cat dist/main.js | browser-run"
   },
   "devDependencies": {
     "assert": "^2.0.0",
     "level": "~6.0.0",
+    "open-cli": "^6.0.1",
     "process": "^0.11.10",
     "webpack": "^5.2.0",
     "webpack-cli": "^4.1.0"
@@ -23,5 +25,8 @@
   ],
   "engines": {
     "node": ">=8"
+  },
+  "dependencies": {
+    "browser-run": "^8.0.0"
   }
 }
