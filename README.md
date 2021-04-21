@@ -1,6 +1,6 @@
 # webpack-starter
 
-> **Demonstrates bundling [`level`](https://github.com/Level/level) for browsers using [`webpack`](https://webpack.js.org/).**
+> **Demonstrates bundling [`level`](https://github.com/Level/level) for browsers using [`webpack`](https://webpack.js.org/).**  
 > See also [`Level/browserify-starter`](https://github.com/Level/browserify-starter).
 
 [![level badge][level-badge]](https://github.com/Level/awesome)
