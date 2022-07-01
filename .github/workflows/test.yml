@@ -1,11 +1,13 @@
 name: Test
 on: [push, pull_request]
+permissions:
+  contents: read
 jobs:
   test:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node: [14]
+        node: [lts/*]
     name: Node ${{ matrix.node }}
     steps:
       - name: Checkout
@@ -15,6 +17,6 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
       - name: Install
-        run: npm ci
+        run: npm i --ignore-scripts
       - name: Test
         run: npm test
