@@ -18,6 +18,19 @@ npm run build
 
 Then open `index.html` in a browser of choice. You're now ready to use your `level` database, backed by IndexedDB!
 
+In order to reduce bundle size, the webpack configuration at [`webpack.config.js`](./webpack.config.js) excludes the [`buffer`](https://github.com/feross/buffer) polyfill. To store binary data, either change the webpack configuration, or use Uint8Array instead of Buffer. For example:
+
+```js
+import { Level } from 'level'
+
+const db = new Level('webpack-starter', {
+  keyEncoding: 'view'
+})
+
+await db.put(new Uint8Array([1, 2]), 'example')
+const example = await db.get(new Uint8Array([1, 2]))
+```
+
 ## Contributing
 
 [`Level/webpack-starter`](https://github.com/Level/webpack-starter) is an **OPEN Open Source Project**. This means that:

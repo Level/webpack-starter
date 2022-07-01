@@ -1,7 +1,7 @@
-import level from 'level'
+import { Level } from 'level'
 
 async function main () {
-  const db = level('webpack-starter')
+  const db = new Level('webpack-starter')
   const output = document.getElementById('output')
 
   await db.put('beep', 'boop')
